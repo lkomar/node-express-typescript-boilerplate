@@ -18,7 +18,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "export CI=true && yarn tsc --noEmit && lint-staged"
+      "pre-commit": "export CI=true && npm tsc --noEmit && lint-staged"
     }
   },
   "dependencies": {
