@@ -10,4 +10,4 @@ This is a node-express backend project. Before installing, download and install 
 
 - `yarn run husky install`
 
-* `yarn start`
+- `yarn start`
