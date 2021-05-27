@@ -9,18 +9,6 @@
     "start": "nodemon",
     "lint:fix": "eslint './src/**/*.ts'"
   },
-  "lint-staged": {
-    "*.{ts}": [
-      "prettier --write",
-      "git add",
-      "eslint -c .eslintrc"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "export CI=true && npm tsc --noEmit && lint-staged"
-    }
-  },
   "dependencies": {
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.7",
@@ -37,8 +25,8 @@
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
